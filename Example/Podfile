@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'Lottie-Example' do
-  pod 'lottie-ios', :git => 'https://github.com/Alex1989Wang/lottie-ios.git'
+  pod 'lottie-ios', :git => 'https://github.com/Alex1989Wang/lottie-ios.git', :commit => '6f1befeb4d12fd0fa3345418799e45b8af95e68f'
 
   target 'lottie-ios_Tests' do
     inherit! :search_paths
@@ -11,5 +11,4 @@ target 'Lottie-Example' do
 end
 
 target 'Lottie-Example-MacOS' do
-  pod 'lottie-ios', :git => 'https://github.com/Alex1989Wang/lottie-ios.git'
-end
+  pod 'lottie-ios', :git => 'https://github.com/Alex1989Wang/lottie-ios.git', :commit => '6f1befeb4d12fd0fa3345418799e45b8af95e68f'

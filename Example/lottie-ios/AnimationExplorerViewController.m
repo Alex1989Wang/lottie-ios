@@ -196,11 +196,27 @@ typedef enum : NSUInteger {
   [self.laAnimation removeFromSuperview];
   self.laAnimation = nil;
   [self resetAllButtons];
-  
-  self.laAnimation = [LOTAnimationView animationNamed:named];
-  self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
-  [self.view addSubview:self.laAnimation];
-  [self.view setNeedsLayout];
+    
+    @try {
+        self.laAnimation = [LOTAnimationView animationNamed:named];
+        self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
+        [self.view addSubview:self.laAnimation];
+        [self.view setNeedsLayout];
+    } @catch (NSException *exception) {
+        if ([exception.name isEqualToString:@"ResourceNotFoundException"]) {
+            NSArray *nameCompos = [named componentsSeparatedByString:@"."];
+            NSString *firstComponet = nameCompos.firstObject;
+            NSString *jsonPath = [[NSBundle mainBundle] pathForResource:firstComponet
+                                                                 ofType:@"json"
+                                                            inDirectory:firstComponet];
+            self.laAnimation = [LOTAnimationView animationWithFilePath:jsonPath];
+            self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
+            [self.view addSubview:self.laAnimation];
+            [self.view setNeedsLayout];
+        }
+    } @finally {
+        
+    }
 }
 
 - (void)_rewind:(UIBarButtonItem *)button {

@@ -22,7 +22,18 @@
   self.view.backgroundColor = [UIColor whiteColor];
   
   self.jsonFiles = [[NSBundle mainBundle] pathsForResourcesOfType:@"json" inDirectory:nil];
-  
+    NSMutableArray *addedJsons = [NSMutableArray arrayWithCapacity:8];
+    for (NSString *subFolder in [self _addedDirectories]) {
+        NSArray *addedJsonFile =
+        [[NSBundle mainBundle] pathsForResourcesOfType:@"json"
+                                           inDirectory:subFolder];
+        [addedJsons addObjectsFromArray:addedJsonFile];
+    }
+    if (addedJsons) {
+        NSMutableArray *allJsons = [self.jsonFiles mutableCopy];
+        [allJsons addObjectsFromArray:addedJsons];
+        self.jsonFiles = [allJsons copy];
+    }
   self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
@@ -64,6 +75,14 @@
   if (self.completionBlock) {
     self.completionBlock(nil);
   }
+}
+
+- (NSArray *)_addedDirectories {
+    return @[@"gift_crystalshoe",
+             @"gift_ferriswheel",
+             @"gift_fireworks",
+             @"gift_treasure",
+             @"gift_yacht"];
 }
 
 @end

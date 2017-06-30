@@ -332,6 +332,10 @@
             }
             NSString *imagePath = [rootDirectory stringByAppendingPathComponent:_layerModel.imageAsset.imageName];
             image = [UIImage imageWithContentsOfFile:imagePath];
+            if (!image) {
+                imagePath = [_layerModel.imageAsset.rootDirectory stringByAppendingPathComponent:_layerModel.imageAsset.imageName];
+                image = [UIImage imageWithContentsOfFile:imagePath];
+            }
         }else{
             NSArray *components = [_layerModel.imageAsset.imageName componentsSeparatedByString:@"."];
             image = [UIImage imageNamed:components.firstObject inBundle:_bundle compatibleWithTraitCollection:nil];

@@ -55,6 +55,10 @@
   
   _inFrame = [jsonDictionary[@"ip"] copy];
   _outFrame = [jsonDictionary[@"op"] copy];
+//    if ((_outFrame.integerValue - _inFrame.integerValue) <= 5 &&
+//        _outFrame.integerValue > 0) {
+//        _outFrame = [NSNumber numberWithInteger:(_outFrame.integerValue + 50)];
+//    }
   _framerate = framerate;
   
   if (_layerType == LOTLayerTypePrecomp) {
