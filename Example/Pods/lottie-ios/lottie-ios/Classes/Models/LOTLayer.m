@@ -30,7 +30,7 @@
     [self _mapFromJSON:jsonDictionary
         withCompBounds:compBounds
          withFramerate:framerate
-     withAssetGroup:assetGroup];
+        withAssetGroup:assetGroup];
   }
   return self;
 }

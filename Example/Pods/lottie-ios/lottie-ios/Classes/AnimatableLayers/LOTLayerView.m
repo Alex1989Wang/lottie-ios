@@ -169,7 +169,8 @@
   _childContainerLayer.anchorPoint = _layerModel.anchor.initialPoint;
   _childContainerLayer.transform = _layerModel.scale.initialScale;
   _childContainerLayer.sublayerTransform = CATransform3DMakeRotation(_layerModel.rotation.initialValue.floatValue, 0, 0, 1);
-  self.hidden = _layerModel.hasInAnimation;
+//  self.hidden = _layerModel.hasInAnimation;
+    _childContainerLayer.hidden = _layerModel.hasInAnimation;
   
   NSArray *groupItems = _layerModel.shapes;
   NSArray *reversedItems = [[groupItems reverseObjectEnumerator] allObjects];
@@ -274,12 +275,7 @@
   
   
   _animation = [CAAnimationGroup LOT_animationGroupForAnimatablePropertiesWithKeyPaths:keypaths];
-  
-  if (_animation) {
-    [_childContainerLayer addAnimation:_animation forKey:@"LottieAnimation"];
-  }
-  
-
+    
   CAKeyframeAnimation *inOutAnimation = [CAKeyframeAnimation animationWithKeyPath:@"hidden"];
   inOutAnimation.keyTimes = _layerModel.inOutKeyTimes;
   inOutAnimation.values = _layerModel.inOutKeyframes;
@@ -290,7 +286,28 @@
 
   _inOutAnimation = inOutAnimation;
   _inOutAnimation.duration = self.layerDuration;
-  [self addAnimation:_inOutAnimation forKey:@"inout"];
+    
+    NSMutableArray *animations = [NSMutableArray array];
+    if (_animation.animations) {
+        [_animation.animations enumerateObjectsUsingBlock:
+         ^(CAAnimation * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+             [animations addObject:obj];
+        }];
+    }
+    [animations addObject:inOutAnimation];
+    CAAnimationGroup *animation = [CAAnimationGroup animation];
+    animation.animations = [animations copy];
+    animation.duration = (_animation.duration == 0.0) ? self.layerDuration :
+    _animation.duration;
+    animation.fillMode = kCAFillModeBoth;
+    animation.removedOnCompletion = NO;
+    _animation = animation;
+  
+//  if (_animation) {
+//    [_childContainerLayer addAnimation:_animation forKey:@"LottieAnimation"];
+//  }
+    [_childContainerLayer addAnimation:animation forKey:@"LottieAnimation"];
+  
   self.duration = self.layerDuration;
 
 }

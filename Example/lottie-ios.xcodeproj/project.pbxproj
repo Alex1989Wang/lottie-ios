@@ -76,6 +76,9 @@
 		C2E091551F0677CF008D8BD8 /* gift_fireworks in Resources */ = {isa = PBXBuildFile; fileRef = C2E091501F0677CF008D8BD8 /* gift_fireworks */; };
 		C2E091561F0677CF008D8BD8 /* gift_treasure in Resources */ = {isa = PBXBuildFile; fileRef = C2E091511F0677CF008D8BD8 /* gift_treasure */; };
 		C2E091571F0677CF008D8BD8 /* gift_yacht in Resources */ = {isa = PBXBuildFile; fileRef = C2E091521F0677CF008D8BD8 /* gift_yacht */; };
+		C2E0918B1F0A1D05008D8BD8 /* gift_bigheart in Resources */ = {isa = PBXBuildFile; fileRef = C2E091891F0A1D05008D8BD8 /* gift_bigheart */; };
+		C2E0918C1F0A1D05008D8BD8 /* gift_car in Resources */ = {isa = PBXBuildFile; fileRef = C2E0918A1F0A1D05008D8BD8 /* gift_car */; };
+		C2E0918E1F0A1D44008D8BD8 /* gift_castle in Resources */ = {isa = PBXBuildFile; fileRef = C2E0918D1F0A1D44008D8BD8 /* gift_castle */; };
 		EEC1E1E127D92497BB7EB181 /* Pods_Lottie_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15EF764A3BC631B7F802E1 /* Pods_Lottie_Example.framework */; };
 		FA1F5A8F1E42B25500FF36BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F5A8E1E42B25500FF36BF /* AppDelegate.m */; };
 		FA1F5A921E42B25500FF36BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F5A911E42B25500FF36BF /* main.m */; };
@@ -186,6 +189,9 @@
 		C2E091501F0677CF008D8BD8 /* gift_fireworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_fireworks; sourceTree = "<group>"; };
 		C2E091511F0677CF008D8BD8 /* gift_treasure */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_treasure; sourceTree = "<group>"; };
 		C2E091521F0677CF008D8BD8 /* gift_yacht */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_yacht; sourceTree = "<group>"; };
+		C2E091891F0A1D05008D8BD8 /* gift_bigheart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_bigheart; sourceTree = "<group>"; };
+		C2E0918A1F0A1D05008D8BD8 /* gift_car */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_car; sourceTree = "<group>"; };
+		C2E0918D1F0A1D44008D8BD8 /* gift_castle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_castle; sourceTree = "<group>"; };
 		D8C83F4B06A893EA3322E53A /* Pods-Lottie-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example/Pods-Lottie-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA1F5A8B1E42B25500FF36BF /* Lottie-Example-MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lottie-Example-MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1F5A8D1E42B25500FF36BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -378,6 +384,9 @@
 		C2E08EEF1F064723008D8BD8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C2E0918D1F0A1D44008D8BD8 /* gift_castle */,
+				C2E091891F0A1D05008D8BD8 /* gift_bigheart */,
+				C2E0918A1F0A1D05008D8BD8 /* gift_car */,
 				C2E0914E1F0677CF008D8BD8 /* gift_crystalshoe */,
 				C2E0914F1F0677CF008D8BD8 /* gift_ferriswheel */,
 				C2E091501F0677CF008D8BD8 /* gift_fireworks */,
@@ -534,6 +543,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Brandon Withrow";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Y39R442P5T;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -575,6 +587,7 @@
 				C2E090AF1F064723008D8BD8 /* vcTransition2.json in Resources */,
 				C2E090AD1F064723008D8BD8 /* Z.json in Resources */,
 				C2E090971F064723008D8BD8 /* D.json in Resources */,
+				C2E0918E1F0A1D44008D8BD8 /* gift_castle in Resources */,
 				C2E090881F064723008D8BD8 /* HamburgerArrow.json in Resources */,
 				C2E090AE1F064723008D8BD8 /* vcTransition1.json in Resources */,
 				C2E0908C1F064723008D8BD8 /* LottieLogo2.json in Resources */,
@@ -599,8 +612,10 @@
 				C2E091571F0677CF008D8BD8 /* gift_yacht in Resources */,
 				C2E090961F064723008D8BD8 /* Comma.json in Resources */,
 				C2E090A81F064723008D8BD8 /* U.json in Resources */,
+				C2E0918C1F0A1D05008D8BD8 /* gift_car in Resources */,
 				C2E091551F0677CF008D8BD8 /* gift_fireworks in Resources */,
 				C2E0908A1F064723008D8BD8 /* LottieLogo1.json in Resources */,
+				C2E0918B1F0A1D05008D8BD8 /* gift_bigheart in Resources */,
 				C2E0908E1F064723008D8BD8 /* PinJump.json in Resources */,
 				C2E090A61F064723008D8BD8 /* S.json in Resources */,
 				C2E091541F0677CF008D8BD8 /* gift_ferriswheel in Resources */,
@@ -938,12 +953,13 @@
 			baseConfigurationReference = 99F3982078CC5B93DA1AFF47 /* Pods-Lottie-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y39R442P5T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottie-ios/lottie-ios-Prefix.pch";
 				INFOPLIST_FILE = "lottie-ios/lottie-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Lottie-Example.Jiang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -954,12 +970,13 @@
 			baseConfigurationReference = D8C83F4B06A893EA3322E53A /* Pods-Lottie-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y39R442P5T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottie-ios/lottie-ios-Prefix.pch";
 				INFOPLIST_FILE = "lottie-ios/lottie-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Lottie-Example.Jiang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

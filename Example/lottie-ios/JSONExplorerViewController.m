@@ -78,7 +78,10 @@
 }
 
 - (NSArray *)_addedDirectories {
-    return @[@"gift_crystalshoe",
+    return @[@"gift_castle",
+             @"gift_bigheart",
+             @"gift_car",
+             @"gift_crystalshoe",
              @"gift_ferriswheel",
              @"gift_fireworks",
              @"gift_treasure",
