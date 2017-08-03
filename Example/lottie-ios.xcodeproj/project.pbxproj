@@ -29,6 +29,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B8E8748514D4FA9C683B1711 /* Pods_lottie_ios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBDFEA18138A27DD5A89337 /* Pods_lottie_ios_Tests.framework */; };
+		C2A2C05A1F14702A00BB1FC1 /* animation_test.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A2C0591F14702A00BB1FC1 /* animation_test.json */; };
 		C2E08FD41F064723008D8BD8 /* 9squares-AlBoardman.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E08EF01F064723008D8BD8 /* 9squares-AlBoardman.json */; };
 		C2E090881F064723008D8BD8 /* HamburgerArrow.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E08FAA1F064723008D8BD8 /* HamburgerArrow.json */; };
 		C2E090891F064723008D8BD8 /* IconTransitions.json in Resources */ = {isa = PBXBuildFile; fileRef = C2E08FAB1F064723008D8BD8 /* IconTransitions.json */; };
@@ -142,6 +143,7 @@
 		94B0A9361261413477E89F1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		99F3982078CC5B93DA1AFF47 /* Pods-Lottie-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example/Pods-Lottie-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7587B24F90B40ADD0CEA8C /* Pods_Lottie_Example_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottie_Example_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A2C0591F14702A00BB1FC1 /* animation_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_test.json; sourceTree = "<group>"; };
 		C2E08EF01F064723008D8BD8 /* 9squares-AlBoardman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9squares-AlBoardman.json"; sourceTree = "<group>"; };
 		C2E08FAA1F064723008D8BD8 /* HamburgerArrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HamburgerArrow.json; sourceTree = "<group>"; };
 		C2E08FAB1F064723008D8BD8 /* IconTransitions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IconTransitions.json; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				C2E08FAF1F064723008D8BD8 /* MotionCorpse-Jrcanest.json */,
 				C2E08FB01F064723008D8BD8 /* PinJump.json */,
 				C2E08FB11F064723008D8BD8 /* TwitterHeart.json */,
+				C2A2C0591F14702A00BB1FC1 /* animation_test.json */,
 				C2E08FB21F064723008D8BD8 /* TypeFace */,
 				C2E08FD11F064723008D8BD8 /* vcTransition1.json */,
 				C2E08FD21F064723008D8BD8 /* vcTransition2.json */,
@@ -598,6 +601,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				C2E090981F064723008D8BD8 /* E.json in Resources */,
 				C2E090A41F064723008D8BD8 /* Q.json in Resources */,
+				C2A2C05A1F14702A00BB1FC1 /* animation_test.json in Resources */,
 				C2E090A11F064723008D8BD8 /* N.json in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				C2E090891F064723008D8BD8 /* IconTransitions.json in Resources */,

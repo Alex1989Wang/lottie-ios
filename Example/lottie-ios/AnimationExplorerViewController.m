@@ -54,7 +54,7 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  self.currentBGColor = ViewBackgroundColorWhite;
+  self.currentBGColor = ViewBackgroundColorBlack;
   self.toolbar = [[UIToolbar alloc] initWithFrame:CGRectZero];
   
   UIBarButtonItem *open = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(_open:)];
