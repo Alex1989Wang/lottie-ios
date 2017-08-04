@@ -75,6 +75,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B8E8748514D4FA9C683B1711 /* Pods_lottie_ios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBDFEA18138A27DD5A89337 /* Pods_lottie_ios_Tests.framework */; };
+		C252ADDF1F344A5800B7384D /* gift_bigheart in Resources */ = {isa = PBXBuildFile; fileRef = C252ADD71F344A5800B7384D /* gift_bigheart */; };
+		C252ADE01F344A5800B7384D /* gift_car in Resources */ = {isa = PBXBuildFile; fileRef = C252ADD81F344A5800B7384D /* gift_car */; };
+		C252ADE11F344A5800B7384D /* gift_castle in Resources */ = {isa = PBXBuildFile; fileRef = C252ADD91F344A5800B7384D /* gift_castle */; };
+		C252ADE21F344A5800B7384D /* gift_crystalshoe in Resources */ = {isa = PBXBuildFile; fileRef = C252ADDA1F344A5800B7384D /* gift_crystalshoe */; };
+		C252ADE31F344A5800B7384D /* gift_ferriswheel in Resources */ = {isa = PBXBuildFile; fileRef = C252ADDB1F344A5800B7384D /* gift_ferriswheel */; };
+		C252ADE41F344A5800B7384D /* gift_fireworks in Resources */ = {isa = PBXBuildFile; fileRef = C252ADDC1F344A5800B7384D /* gift_fireworks */; };
+		C252ADE51F344A5800B7384D /* gift_treasure in Resources */ = {isa = PBXBuildFile; fileRef = C252ADDD1F344A5800B7384D /* gift_treasure */; };
+		C252ADE61F344A5800B7384D /* gift_yacht in Resources */ = {isa = PBXBuildFile; fileRef = C252ADDE1F344A5800B7384D /* gift_yacht */; };
 		EEC1E1E127D92497BB7EB181 /* Pods_Lottie_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15EF764A3BC631B7F802E1 /* Pods_Lottie_Example.framework */; };
 		FA1F5A8F1E42B25500FF36BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F5A8E1E42B25500FF36BF /* AppDelegate.m */; };
 		FA1F5A921E42B25500FF36BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F5A911E42B25500FF36BF /* main.m */; };
@@ -188,6 +196,14 @@
 		94B0A9361261413477E89F1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		99F3982078CC5B93DA1AFF47 /* Pods-Lottie-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example/Pods-Lottie-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AC7587B24F90B40ADD0CEA8C /* Pods_Lottie_Example_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottie_Example_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C252ADD71F344A5800B7384D /* gift_bigheart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_bigheart; sourceTree = "<group>"; };
+		C252ADD81F344A5800B7384D /* gift_car */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_car; sourceTree = "<group>"; };
+		C252ADD91F344A5800B7384D /* gift_castle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_castle; sourceTree = "<group>"; };
+		C252ADDA1F344A5800B7384D /* gift_crystalshoe */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_crystalshoe; sourceTree = "<group>"; };
+		C252ADDB1F344A5800B7384D /* gift_ferriswheel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_ferriswheel; sourceTree = "<group>"; };
+		C252ADDC1F344A5800B7384D /* gift_fireworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_fireworks; sourceTree = "<group>"; };
+		C252ADDD1F344A5800B7384D /* gift_treasure */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_treasure; sourceTree = "<group>"; };
+		C252ADDE1F344A5800B7384D /* gift_yacht */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gift_yacht; sourceTree = "<group>"; };
 		CED53248BEFE3C87F0FE12C7 /* Pods_Lottie_Viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottie_Viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C83F4B06A893EA3322E53A /* Pods-Lottie-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example/Pods-Lottie-Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA1F5A8B1E42B25500FF36BF /* Lottie Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lottie Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,6 +351,14 @@
 			isa = PBXGroup;
 			children = (
 				622F76CF1F2BE63100269858 /* TypeFace */,
+				C252ADD71F344A5800B7384D /* gift_bigheart */,
+				C252ADD81F344A5800B7384D /* gift_car */,
+				C252ADD91F344A5800B7384D /* gift_castle */,
+				C252ADDA1F344A5800B7384D /* gift_crystalshoe */,
+				C252ADDB1F344A5800B7384D /* gift_ferriswheel */,
+				C252ADDC1F344A5800B7384D /* gift_fireworks */,
+				C252ADDD1F344A5800B7384D /* gift_treasure */,
+				C252ADDE1F344A5800B7384D /* gift_yacht */,
 				622F76B51F2BE58100269858 /* 9squares-AlBoardman.json */,
 				622F76B61F2BE58100269858 /* HamburgerArrow.json */,
 				622F76B71F2BE58100269858 /* IconTransitions.json */,
@@ -535,7 +559,7 @@
 				ORGANIZATIONNAME = "Brandon Withrow";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = VM8ZLJG6JZ;
+						DevelopmentTeam = Y39R442P5T;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -574,6 +598,7 @@
 				622F76F01F2BE63100269858 /* B.json in Resources */,
 				622F77001F2BE63100269858 /* O.json in Resources */,
 				622F76F71F2BE63100269858 /* F.json in Resources */,
+				C252ADE51F344A5800B7384D /* gift_treasure in Resources */,
 				48A852311E3A9E71000AD155 /* lottie_logo.png in Resources */,
 				622F76F11F2BE63100269858 /* BlinkingCursor.json in Resources */,
 				622F76C71F2BE58100269858 /* LottieLogo2.json in Resources */,
@@ -583,10 +608,13 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				622F77091F2BE63100269858 /* X.json in Resources */,
 				622F76F41F2BE63100269858 /* Comma.json in Resources */,
+				C252ADDF1F344A5800B7384D /* gift_bigheart in Resources */,
 				622F76FD1F2BE63100269858 /* L.json in Resources */,
 				622F76C81F2BE58100269858 /* MotionCorpse-Jrcanest.json in Resources */,
 				622F77031F2BE63100269858 /* R.json in Resources */,
+				C252ADE61F344A5800B7384D /* gift_yacht in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C252ADE31F344A5800B7384D /* gift_ferriswheel in Resources */,
 				622F76CA1F2BE58100269858 /* TwitterHeart.json in Resources */,
 				622F76F91F2BE63100269858 /* H.json in Resources */,
 				622F76C61F2BE58100269858 /* LottieLogo1.json in Resources */,
@@ -602,15 +630,19 @@
 				622F77061F2BE63100269858 /* U.json in Resources */,
 				622F76CE1F2BE58100269858 /* Watermelon.json in Resources */,
 				622F77041F2BE63100269858 /* S.json in Resources */,
+				C252ADE21F344A5800B7384D /* gift_crystalshoe in Resources */,
 				622F770A1F2BE63100269858 /* Y.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				622F76FE1F2BE63100269858 /* M.json in Resources */,
+				C252ADE01F344A5800B7384D /* gift_car in Resources */,
 				622F76F31F2BE63100269858 /* Colon.json in Resources */,
 				622F76FF1F2BE63100269858 /* N.json in Resources */,
 				622F76C21F2BE58100269858 /* 9squares-AlBoardman.json in Resources */,
 				622F77011F2BE63100269858 /* P.json in Resources */,
 				622F76C51F2BE58100269858 /* LottieLogo1_masked.json in Resources */,
 				622F76FC1F2BE63100269858 /* K.json in Resources */,
+				C252ADE11F344A5800B7384D /* gift_castle in Resources */,
+				C252ADE41F344A5800B7384D /* gift_fireworks in Resources */,
 				622F76CC1F2BE58100269858 /* vcTransition1.json in Resources */,
 				622F76FA1F2BE63100269858 /* I.json in Resources */,
 				622F76F21F2BE63100269858 /* C.json in Resources */,
@@ -939,13 +971,13 @@
 			baseConfigurationReference = 99F3982078CC5B93DA1AFF47 /* Pods-Lottie-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VM8ZLJG6JZ;
+				DEVELOPMENT_TEAM = Y39R442P5T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottie-ios/lottie-ios-Prefix.pch";
 				INFOPLIST_FILE = "lottie-ios/lottie-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Lottie-Example.Jiang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -956,13 +988,13 @@
 			baseConfigurationReference = D8C83F4B06A893EA3322E53A /* Pods-Lottie-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VM8ZLJG6JZ;
+				DEVELOPMENT_TEAM = Y39R442P5T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottie-ios/lottie-ios-Prefix.pch";
 				INFOPLIST_FILE = "lottie-ios/lottie-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Lottie-Example.Jiang";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

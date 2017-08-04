@@ -22,7 +22,19 @@
   self.view.backgroundColor = [UIColor whiteColor];
   
   self.jsonFiles = [[NSBundle mainBundle] pathsForResourcesOfType:@"json" inDirectory:nil];
-  
+    NSMutableArray *addedJsons = [NSMutableArray arrayWithCapacity:8];
+    for (NSString *subFolder in [self _addedDirectories]) {
+        NSArray *addedJsonFile =
+        [[NSBundle mainBundle] pathsForResourcesOfType:@"json"
+                                           inDirectory:subFolder];
+        [addedJsons addObjectsFromArray:addedJsonFile];
+    }
+    if (addedJsons) {
+        NSMutableArray *allJsons = [self.jsonFiles mutableCopy];
+        [allJsons addObjectsFromArray:addedJsons];
+        self.jsonFiles = [allJsons copy];
+    }
+    
   self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
@@ -56,7 +68,14 @@
   NSString *fileURL = self.jsonFiles[indexPath.row];
   NSArray *components = [fileURL componentsSeparatedByString:@"/"];
    if (self.completionBlock) {
-    self.completionBlock(components.lastObject);
+       NSString *lastComponent = components.lastObject;
+       NSString *resultPath = lastComponent;
+       for (NSString *filePath in [self _addedDirectories]) {
+           if ([lastComponent isEqualToString:[filePath stringByAppendingString:@".json"]]) {
+               resultPath = fileURL;
+           }
+       }
+       self.completionBlock(resultPath);
   }
 }
 
@@ -64,6 +83,17 @@
   if (self.completionBlock) {
     self.completionBlock(nil);
   }
+}
+
+- (NSArray *)_addedDirectories {
+    return @[@"gift_castle",
+             @"gift_bigheart",
+             @"gift_car",
+             @"gift_crystalshoe",
+             @"gift_ferriswheel",
+             @"gift_fireworks",
+             @"gift_treasure",
+             @"gift_yacht"];
 }
 
 @end

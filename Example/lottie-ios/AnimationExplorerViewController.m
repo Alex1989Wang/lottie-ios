@@ -211,6 +211,10 @@ typedef enum : NSUInteger {
   
   self.laAnimation = [LOTAnimationView animationNamed:named];
   self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
+    if (CGRectEqualToRect(self.laAnimation.frame, CGRectZero)) {
+        self.laAnimation = [LOTAnimationView animationWithFilePath:named];
+        self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
+    }
   [self.view addSubview:self.laAnimation];
   [self.view setNeedsLayout];
 }
