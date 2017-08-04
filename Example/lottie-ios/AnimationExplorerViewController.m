@@ -152,10 +152,12 @@ typedef enum : NSUInteger {
     textField.placeholder = @"Enter URL";
   }];
   
-  UIAlertAction *load = [UIAlertAction actionWithTitle:@"Load" style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * action) {
-                                                         [self _loadAnimationFromURLString:alert.textFields.firstObject.text];
-                                                       }];
+  UIAlertAction *load = [UIAlertAction actionWithTitle:@"Load"
+                                                 style:UIAlertActionStyleDefault
+                                               handler:
+                         ^(UIAlertAction * action) {
+                             [self _loadAnimationFromURLString:alert.textFields.firstObject.text];
+                         }];
   
   [alert addAction:load];
   
@@ -202,7 +204,8 @@ typedef enum : NSUInteger {
         self.laAnimation.contentMode = UIViewContentModeScaleAspectFit;
         [self.view addSubview:self.laAnimation];
         [self.view setNeedsLayout];
-    } @catch (NSException *exception) {
+    }
+    @catch (NSException *exception) {
         if ([exception.name isEqualToString:@"ResourceNotFoundException"]) {
             NSArray *nameCompos = [named componentsSeparatedByString:@"."];
             NSString *firstComponet = nameCompos.firstObject;
@@ -214,8 +217,8 @@ typedef enum : NSUInteger {
             [self.view addSubview:self.laAnimation];
             [self.view setNeedsLayout];
         }
-    } @finally {
-        
+    }
+    @finally {
     }
 }
 
